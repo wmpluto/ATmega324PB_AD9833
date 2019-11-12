@@ -83,7 +83,7 @@ unsigned char SPI_Init(unsigned char lsbFirst,
 	DDRB |= _BV(6); // PB6: MISO
 	
 	/* SPI Master device, LSB first, Mode 3, 8MHz/16 = 500kHz */
-	SPCR0 = ((1<<SPE) | (1<<MSTR) | (1<<SPR0)) | (1<<SPI2X);
+	SPCR0 = (1<<SPE) | (1<<MSTR) | (1<<SPR0) | (1<<SPI2X) | (1<<CPOL);
 	/* No interrupts or double speed... */
 	SPSR0  = (1<<SPI2X);
 	

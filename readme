@@ -1,0 +1,5 @@
+# Run AD9833 on ATmega324PB XPLAINED PRO
+
+Note: The SPI mode of AD9833 is mode 2(SCK is high when idle, data is sampled on the leading edge).
+
+https://www.analog.com/media/en/technical-documentation/data-sheets/ad9833.pdf
